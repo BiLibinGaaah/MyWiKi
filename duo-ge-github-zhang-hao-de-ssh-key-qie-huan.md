@@ -12,20 +12,19 @@
 
 跟上面过程一样，注意不要重名即可。
 
-假设第二个名字为id_ed25519_second
+假设第二个名字为id\_ed25519\_second
 
 ## 在.ssh/下创建config文件时的区别（关键）
 
 第二个Host要用 第二个SSH key的名字.github.com
 
-eg:`Host id_ed25519_second.git.com'
+eg:\`Host id\_ed25519\_second.git.com'
 
 其他相同。
 
 ## 测试配置是否正确
 
-`$ ssh -T git@github.com`
-`$ ssh -T id_ed25519_second.git.com`
+`$ ssh -T git@github.com` `$ ssh -T id_ed25519_second.git.com`
 
 ## 使得key可以自动切换（关键）
 
@@ -34,3 +33,4 @@ eg:`Host id_ed25519_second.git.com'
 `$ git clone git@id_ed25519_second.git.com:username/repo.git`
 
 作者：[itmyhome](https://blog.csdn.net/itmyhome1990)
+
